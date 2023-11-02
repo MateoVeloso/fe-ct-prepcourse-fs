@@ -139,11 +139,7 @@ function esPrimo(num) {
    // Tu código:
    var d=1
    var b=0
-   if(num!=0&&num>0){while(num/d!=1){
-      if(num%d==0){b++}
-      d++
-  }}
-  console.log(b)
+   if(num!=0&&num>0){while(num/d!=1){if(num%d==0){b++}d++}}
   if(b===1){return true} else {return false}
 }
 
