@@ -135,6 +135,11 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
+   let i=0
+   for(let r=0;r<array.length;r++){
+      if(r==0){continue}else if(array[r]!==array[r-1]){i++}
+   }
+   if(i>0){return false}else{return true}
 }
 
 function mesesDelAño(array) {
@@ -142,18 +147,28 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   let me=[]; let c=0
+   array.forEach((string)=>{if (string=="Enero"||string=="Marzo"||string=="Noviembre"){me.push(string);c++}})
+   if(c<3){return "No se encontraron los meses pedidos"}
+   return me
 }
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   let s=[]
+   for(let m=0;m<=10;m++){s.push(6*m)}
+   return s
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   let mc=[];
+   array.forEach((num)=>{if(num>100){mc.push(num)}});
+   return mc;
 }
 
 /* ----------------------------------------------------------------------------------
