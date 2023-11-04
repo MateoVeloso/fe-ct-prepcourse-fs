@@ -182,7 +182,17 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
-}
+   let y=[];
+   for (let r=0;r<10;r++){
+      num=num+2
+      if(num===r){
+         return "Se interrumpió la ejecución";
+      }else{
+            y.push(num);
+         };
+   };
+   return y;
+};
 
 function continueStatement(num) {
    // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -191,6 +201,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   let y=[];
+   for (let r=0;r<10;r++){
+      if(r===5){
+         continue;
+      }else{
+            num=num+2
+            y.push(num);
+         };
+   };
+   return y;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
