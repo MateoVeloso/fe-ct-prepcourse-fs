@@ -206,7 +206,7 @@ function continueStatement(num) {
       if(r===5){
          continue;
       }else{
-            num=num+2
+            num=num+2;
             y.push(num);
          };
    };
