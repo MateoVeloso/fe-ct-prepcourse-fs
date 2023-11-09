@@ -39,7 +39,7 @@ function agregarStringInvertida() {
    // [PISTA]: necesitarás utilizar el objeto "this".
    String.prototype.reverse=function(){
       let letras = this.split("");
-      reverso=[]
+      let reverso=[]
       for(let r=letras.length;r>=0;r--){
          reverso.push(letras[r])
       }
