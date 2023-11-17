@@ -29,7 +29,7 @@ function agregarMetodoPrototype(Usuario) {
    // El método debe llamarse "saludar" y debe devolver el string "Hello World!".
    // Tu código:
    Usuario.prototype.saludar=function(){
-      return "Hello World!"
+      return "Hello World!";
    }
 }
 
@@ -39,11 +39,11 @@ function agregarStringInvertida() {
    // [PISTA]: necesitarás utilizar el objeto "this".
    String.prototype.reverse=function(){
       let letras = this.split("");
-      let reverso=[]
+      let reverso=[];
       for(let r=letras.length;r>=0;r--){
-         reverso.push(letras[r])
+         reverso.push(letras[r]);
       }
-      return reverso.join("")
+      return reverso.join("");
    }
 }
 

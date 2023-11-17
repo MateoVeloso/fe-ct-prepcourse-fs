@@ -11,7 +11,7 @@ function crearGato(nombre, edad) {
       nombre:nombre,
       edad:edad,
       meow:function(){
-         return "Meow!"
+         return "Meow!";
       }
    }
    return gato;
@@ -26,7 +26,7 @@ function nuevoUsuario(nombre, email, password) {
       nombre:nombre,
       email:email,
       password:password}
-   return usuario
+   return usuario;
 }
 
 function agregarPropiedad(objeto, propiedad) {
@@ -66,11 +66,7 @@ function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if (objetoUsuario.email==undefined){
-      return false;
-   } else{
-      return true;
-   }
+   return objetoUsuario.email!=undefined;
 }
 
 function tienePropiedad(objeto, propiedad) {
@@ -84,11 +80,7 @@ function verificarPassword(objetoUsuario, password) {
    // Verifica si la propiedad "password" del "objetoUsuario" coincide con el parámetro "password".
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
-   if (objetoUsuario.password==password){
-      return true;
-   } else{
-      return false;
-   }
+   return objetoUsuario.password===password
 }
 
 function actualizarPassword(objetoUsuario, nuevaPassword) {
@@ -131,7 +123,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
    for(let r=0; r<objetoUsuario.posts.length; r++){
       l = l + objetoUsuario.posts[r].likes
    }
-   return l
+   return l;
 }
 
 function agregarMetodoCalculoDescuento(objetoProducto) {

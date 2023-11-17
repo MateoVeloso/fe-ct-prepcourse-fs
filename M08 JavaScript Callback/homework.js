@@ -33,7 +33,7 @@ function sumarArray(arrayOfNumbers, cb) {
    // Tu código:
    let suma=0;
    for (let r = 0; r < arrayOfNumbers.length; r++) {
-      suma=suma+arrayOfNumbers[r];
+      suma+=arrayOfNumbers[r];
    }
    cb(suma);
 }
